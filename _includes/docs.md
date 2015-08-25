@@ -39,9 +39,9 @@ Here you find all information required for you to work during the Codepot 2015 W
 
 ## Clone the GIT properties repository to your computer
 
-Clone repositories from https://github.com/Codepot-Microservices-2015-08
+Clone repositories from [https://github.com/Codepot-Microservices-2015-08](https://github.com/Codepot-Microservices-2015-08)
 
-Run this command (if you have sent your SSH key to Github)
+Run this command (if you have sent your SSH key to Github) to clone the properties repository
 
 ```
 git clone git@github.com:Codepot-Microservices-2015-08/properties.git
@@ -97,7 +97,7 @@ public class SomeController {
     private final VideoService videoService;
 
     @Autowired
-    public IngredientsController(VideoService videoService) {
+    public SomeController(VideoService videoService) {
         this.videoService = videoService;
     }
 
@@ -121,7 +121,7 @@ public class VideoService {
     private final RetryExecutor retryExecutor;
 
     @Autowired
-    public DojrzewatrUpdater(ServiceRestClient serviceRestClient, RetryExecutor retryExecutor) {
+    public VideoService(ServiceRestClient serviceRestClient, RetryExecutor retryExecutor) {
         this.serviceRestClient = serviceRestClient;
         this.retryExecutor = retryExecutor;
     }
