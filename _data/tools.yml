@@ -1,0 +1,14 @@
+-   name: Rundeck
+    url: http://rundeck.codepot:4440
+-   name: Nexus
+    url: http://nexus.codepot:8081/nexus/
+-   name: Graphite
+    url: http://graphite.codepot/
+-   name: Grafana
+    url: http://grafana.codepot/
+-   name: Kibana
+    url: http://kibana.codepot/
+-   name: Exhibitor
+    url: http://apps.codepot:8080/exhibitor/v1/ui/index.html
+-   name: Jenkins
+    url: http://jenkins.codepot:8080/
