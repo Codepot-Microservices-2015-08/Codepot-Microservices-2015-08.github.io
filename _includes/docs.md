@@ -5,7 +5,17 @@ Welcome to the Codepot 2015 Workshop!
 
 Here you find all information required for you to work during the Codepot 2015 Workshop.
 
-# Good to do before the workshop
+# Table of contents
+
+- [Documentation](#documentation)
+- [Ok what should I do now?](#ok-what-should-I-do-now?)
+- [When is my feature done?](#When-is-my-feature-done?)
+- [How to run my microservice locally](#how-to-run-my-microservice-locally)
+- [Useful snippets / info](#useful-snippets-/-info)
+
+# Documentation
+
+## Good to do before the workshop
 
 - [Read about Microservices](http://martinfowler.com/articles/microservices.html)
 - [Watch a video about Microservices](https://www.youtube.com/watch?v=wgdBVIX9ifA)
@@ -15,11 +25,11 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Read about Consumer Driven Contracts] (http://martinfowler.com/articles/consumerDrivenContracts.html)
 - [Watch a video about Consumer Driven Contracts](https://vimeo.com/130779882)
 
-## If you don't know Spring at all
+### If you don't know Spring at all
 
 - [Read a getting started to Spring Boot](https://spring.io/guides/gs/spring-boot/)
 
-# Presentations and introductions
+## Presentations and introductions
 
 - [Codepot presentation](https://docs.google.com/presentation/d/1ZSMaZJrvurvH3-EKuI2DXifKenPVp2xq80uzJvr7yzs/edit?usp=sharing)
 - [Micro-Infra spring fast introduction - online](https://docs.google.com/presentation/d/1xbdOWYvuGKnp-_1wGz-bZTobEbCePRr062YUnx4jTQg/edit?usp=sharing)
@@ -57,6 +67,16 @@ The ports are presented below in the table.
 ### Reminder!
 
 Try to be as reactive and non-blocking as possible!
+
+# When is my feature done?
+
+The definition of done is as follows:
+
+- the task has been successfully implemented
+- you have tests that back that up
+- you have created a metric to verify your feature
+- your feature has production alerting in Seyren
+- each team has its own Slack room with alerts popping up
 
 # How to run my microservice locally
 
