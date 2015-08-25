@@ -1,3 +1,5 @@
+-   name: Slack communication channel
+    url: https://microhackathon.slack.com
 -   name: Rundeck
     url: http://rundeck.codepot:4440
 -   name: Nexus
