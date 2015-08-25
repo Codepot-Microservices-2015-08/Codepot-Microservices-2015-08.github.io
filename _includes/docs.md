@@ -8,12 +8,12 @@ Here you find all information required for you to work during the Codepot 2015 W
 # Table of contents
 
 - [Documentation](#documentation)
-- [Ok what should I do now?](#ok-what-should-I-do-now?)
-- [When is my feature done?](#When-is-my-feature-done?)
+- [Ok what should I do now?](#ok-what-should-I-do-now)
+- [When is my feature done?](#when-is-my-feature-done)
 - [How to run my microservice locally](#how-to-run-my-microservice-locally)
-- [Useful snippets / info](#useful-snippets-/-info)
+- [Useful snippets / info](#useful-snippets-info)
 
-# Documentation
+# <a name="documentation"/></a> Documentation
 
 ## Good to do before the workshop
 
@@ -35,7 +35,7 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Micro-Infra spring fast introduction - online](https://docs.google.com/presentation/d/1xbdOWYvuGKnp-_1wGz-bZTobEbCePRr062YUnx4jTQg/edit?usp=sharing)
 - [Micro-Infra spring fast introduction - pdf](resources/Microservices_Codepot.pdf)
 
-# Ok what should I do now? 
+# <a name="ok-what-should-I-do-now"/></a> Ok what should I do now? 
 
 ## Clone the GIT properties repository to your computer
 
@@ -68,7 +68,7 @@ The ports are presented below in the table.
 
 Try to be as reactive and non-blocking as possible!
 
-# When is my feature done?
+# <a name="when-is-my-feature-done"/></a> When is my feature done?
 
 The definition of done is as follows:
 
@@ -78,11 +78,11 @@ The definition of done is as follows:
 - your feature has production alerting in Seyren
 - each team has its own Slack room with alerts popping up
 
-# How to run my microservice locally
+# <a name="how-to-run-my-microservice-locally"/></a> How to run my microservice locally
 
 It's all there in the readme - [boot-microservice-readme](https://github.com/4finance/boot-microservice)
 
-# Useful snippets / info
+# <a name="useful-snippets-info"/></a> Useful snippets / info
 
 ## Spring Rest Controller example
 
