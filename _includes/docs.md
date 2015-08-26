@@ -25,9 +25,11 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Read about Consumer Driven Contracts] (http://martinfowler.com/articles/consumerDrivenContracts.html)
 - [Watch a video about Consumer Driven Contracts](https://vimeo.com/130779882)
 
-### If you don't know Spring at all
+### If you don't know anything about Spring / Guava / Concurrency
 
 - [Read a getting started to Spring Boot](https://spring.io/guides/gs/spring-boot/)
+- [Read about ListenableFuture](https://code.google.com/p/guava-libraries/wiki/ListenableFutureExplained)
+- [Definitive guide to CompletableFuture](http://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)
 
 ## Presentations and introductions
 
@@ -89,7 +91,7 @@ It's all there in the readme - [boot-microservice-readme](https://github.com/4fi
 Example of a `Controller` with an endpoint at URL `/video` that accepts the `content-type` header equal to `application/vnd.some.service.v1+json`
 and produces a `JSON` as output. You have to call it via `POST` HTTP method
 
-```
+```java
 @RestController
 @RequestMapping(value = "/video", consumes = "application/vnd.some.service.v1+json", produces = MediaType.APPLICATION_JSON_VALUE)
 public class SomeController {
@@ -113,7 +115,7 @@ public class SomeController {
 Example of a component registered via `@Component` (you should use `@Configuration` to register beans) that uses
  `ServiceRestClient` to call other components.
 
-```
+```java
 @Component
 public class VideoService {
 
@@ -144,7 +146,7 @@ public class VideoService {
 
 ## Metrics setup example
 
-```
+```java
 @Component
 class IngredientsAggregator {
 
