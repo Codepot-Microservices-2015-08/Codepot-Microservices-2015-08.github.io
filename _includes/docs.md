@@ -89,6 +89,7 @@ The definition of done is as follows:
 - you have created a metric to verify your feature
 - your feature has production alerting in Seyren
 - each team has its own Slack room with alerts popping up
+- there are dashboards on [kibana](http://kibana.codepot/#/dashboard/file/default.json) (logs) and [grafana](http://grafana.codepot/#/dashboard/file/default.json) (grafana) set up
 
 # <a name="how-to-run-my-microservice-locally"/></a> How to run my microservice locally
 
