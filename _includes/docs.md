@@ -11,6 +11,8 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Ok what should I do now?](#ok-what-should-I-do-now)
 - [When is my feature done?](#when-is-my-feature-done)
 - [How to run my microservice locally](#how-to-run-my-microservice-locally)
+- [What's my service's port?](#ports)
+- [Where are all the tools?](#tools)
 - [Useful snippets / info](#useful-snippets-info)
     - [/etc/hosts entries](#hosts)
     - [Spring Rest Controller example](#spring-rest-controller)
