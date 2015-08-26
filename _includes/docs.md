@@ -206,17 +206,28 @@ Click the _Create check_ button to the top right:
 
 Here you have a description of the fields.
 
-| Field name | Description | Example | Additional links | 
-| --- | --- | --- | --- | 
-| Name | Name of the alert in format: [REALM][APP] Alert name | [RED][BUTELKATR] Number of beer bottles | | 
-| Description | Description of the alert | Processed payments - last 15 minute average | | 
-| Target | Function from Graphite basing on a Graphite metric. Example to the right shows a Graphite function keepLastValue applied to a Graphite metric from Polish backoffice. Note that you might get NULL values from Graphite so keepLastValue is a function that in that case will help you pick the last value that was present in Graphite. | keepLastValue(apps.prod.red.butelkatr.numberOfBeerBottles.meter.m15_rate) | Graphite functions - https://graphite.readthedocs.org/en/0.9.10/functions.html |
-| From | When should the check start | 10:1020150510 (Not really sure if that's the format (wink) ) | | 
-| Until | When should the check stop | 10:1020150510 (Not really sure if that's the format (wink) ) | |
-| Warn level | What is the threshold that when the metric goes BELOW will set the level to WARN | 100 | | 
-| Error level | What is the threshold that when the metric goes BELOW will set the level to ERROR | 10 | | 
-| Enabled | Enables the metric | (on) or (off) | | 
-| Allow no data | Assumes that if there are null values then it's not a problem | (on) or (off) |
+- Name
+    - Name of the alert in format: [REALM][APP] Alert name
+    - Example: `[RED][BUTELKATR] Number of beer bottles` 
+- Description 
+    - Description of the alert
+    - Example: `Number of beer bottles`  
+- Target 
+    - Function from Graphite basing on a Graphite metric. Example shows a Graphite function keepLastValue applied to a Graphite metric. Note that you might get NULL values from Graphite so keepLastValue is a function that in that case will help you pick the last value that was present in Graphite.
+    - Example: `keepLastValue(.*.red.butelkatr.bottles.meter.m15_rate)`
+    - Read more here about Graphite functions: [Graphite functions](https://graphite.readthedocs.org/en/0.9.10/functions.html)
+- Warn level
+    - What is the threshold that when the metric goes BELOW will set the level to WARN 
+    - Example: `100`  
+- Error level
+    - What is the threshold that when the metric goes BELOW will set the level to ERROR
+    - Example: `10`
+- Enabled 
+    - Enables the metric 
+    - Can be (on) or (off) 
+- Allow no data 
+    - Assumes that if there are null values then it's not a problem 
+    - Can be (on) or (off)
 
 ### Add subscription
 
