@@ -3,3 +3,5 @@ url: "http://Codepot-Microservices-2015-08.github.io"
 markdown: redcarpet
 exclude: ['vendor']
 domain: codepot
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
