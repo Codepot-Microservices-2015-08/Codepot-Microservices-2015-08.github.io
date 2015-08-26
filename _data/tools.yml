@@ -18,3 +18,5 @@
     url: http://apps.codepot:8090/hystrix-dashboard/
 -   name: Seyren
     url: http://seyren.codepot:8080/
+-   name: Spring Boot Admin
+    url: http://apps.codepot:9999/
