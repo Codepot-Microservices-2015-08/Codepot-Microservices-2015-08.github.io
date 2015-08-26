@@ -12,6 +12,11 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [When is my feature done?](#when-is-my-feature-done)
 - [How to run my microservice locally](#how-to-run-my-microservice-locally)
 - [Useful snippets / info](#useful-snippets-info)
+    - [/etc/hosts entries](#hosts)
+    - [Spring Rest Controller example](#spring-rest-controller)
+    - [Service Rest Client example](#service-rest-client)
+    - [Metrics setting example](#metrics)
+    - [Seyren setup example](#seyren)
 
 # <a name="documentation"/></a> Documentation
 
@@ -89,7 +94,7 @@ It's all there in the readme - [boot-microservice-readme](https://github.com/4fi
 
 # <a name="useful-snippets-info"/></a> Useful snippets / info
 
-## Spring Rest Controller example
+## <a name="spring-rest-controller"/></a> Spring Rest Controller example
 
 Example of a `Controller` with an endpoint at URL `/video` that accepts the `content-type` header equal to `application/vnd.some.service.v1+json`
 and produces a `JSON` as output. You have to call it via `POST` HTTP method
@@ -113,7 +118,7 @@ public class SomeController {
 }
 ```
 
-## Service Rest Client example
+## <a name="service-rest-client"/></a> Service Rest Client example
 
 Example of a component registered via `@Component` (you should use `@Configuration` to register beans) that uses
  `ServiceRestClient` to call other components.
@@ -147,7 +152,7 @@ public class VideoService {
 ```
 
 
-## Metrics setup example
+## <a name="metrics"/></a> Metrics setup example
 
 ```java
 @Component
@@ -177,7 +182,7 @@ class IngredientsAggregator {
 
 ```
 
-## How to configure alerting in Seyren
+## <a name="seyren"/></a> How to configure alerting in Seyren
 
 In order to add alerting in Seyren you have to first:
 

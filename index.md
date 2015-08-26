@@ -14,7 +14,7 @@ layout: default
 {% endfor %}
 </ul>
 
-# /etc/hosts
+# <a name="hosts"/></a> /etc/hosts
 
 ```
 52.16.215.68	nexus.codepot
