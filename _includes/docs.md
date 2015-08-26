@@ -17,6 +17,9 @@ Here you find all information required for you to work during the Codepot 2015 W
 
 ## Good to do before the workshop
 
+- Clone and build boot-microservice so that all the libraries get downloaded. 
+    - [Link to the boot-microservice repository](https://github.com/4finance/boot-microservice) which will be the base for the services that we will build 
+    - Execute command `git clone git@github.com:4finance/boot-microservice.git && cd boot-microservice && ./gradlew clean build` to clone and built the application 
 - [Read about Microservices](http://martinfowler.com/articles/microservices.html)
 - [Watch a video about Microservices](https://www.youtube.com/watch?v=wgdBVIX9ifA)
 - [Read about 12 Factor App](http://12factor.net/)
@@ -175,3 +178,54 @@ class IngredientsAggregator {
 ```
 
 ## How to configure alerting in Seyren
+
+In order to add alerting in Seyren you have to first:
+
+- Add hosts entries as presented in this doc
+- Go to `http://seyren.codepot`
+
+Now do the following actions:
+
+### Go to checks
+
+Click the _Checks_ button to the top: 
+
+![alt text](images/seyren/seyren_checks.png "Seyren Checks")
+
+### Create a new check
+
+In the checks site you will have a list of already created checks.
+
+Click the _Create check_ button to the top right: 
+
+![alt text](images/seyren/seyren_create_check.png "Create Seyren Check")
+
+### Fill out the dialog
+
+![alt text](images/seyren/seyren_create_check_dialog.png "Create Seyren Check Dialog")
+
+Here you have a description of the fields.
+
+| Field name | Description | Example | Additional links | 
+| --- | --- | --- | --- | 
+| Name | Name of the alert in format: [REALM][APP] Alert name | [RED][BUTELKATR] Number of beer bottles | | 
+| Description | Description of the alert | Processed payments - last 15 minute average | | 
+| Target | Function from Graphite basing on a Graphite metric. Example to the right shows a Graphite function keepLastValue applied to a Graphite metric from Polish backoffice. Note that you might get NULL values from Graphite so keepLastValue is a function that in that case will help you pick the last value that was present in Graphite. | keepLastValue(apps.prod.red.butelkatr.numberOfBeerBottles.meter.m15_rate) | Graphite functions - https://graphite.readthedocs.org/en/0.9.10/functions.html |
+| From | When should the check start | 10:1020150510 (Not really sure if that's the format (wink) ) | | 
+| Until | When should the check stop | 10:1020150510 (Not really sure if that's the format (wink) ) | |
+| Warn level | What is the threshold that when the metric goes BELOW will set the level to WARN | 100 | | 
+| Error level | What is the threshold that when the metric goes BELOW will set the level to ERROR | 10 | | 
+| Enabled | Enables the metric | (on) or (off) | | 
+| Allow no data | Assumes that if there are null values then it's not a problem | (on) or (off) |
+
+### Add subscription
+
+Once you've added a metric most likely you want to get notified if some threshold has been reached. To do that you have to add a subscription:
+
+![alt text](images/seyren/seyren_add_subscription.png "Create Subscription for an alert")
+
+### Fill out the subscription dialog
+
+Pick `Slack` as _Type_ and type in the _channel name with a hash at the beginning`. e.g. `#channel` 
+
+![alt text](images/seyren/seyren_create_subscription.png "Fill out the subscription dialog")
