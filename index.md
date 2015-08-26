@@ -17,12 +17,15 @@ layout: default
 # <a name="hosts"/></a> /etc/hosts
 
 ```
-52.16.215.68	nexus.codepot
-52.19.100.152	rundeck.codepot
-52.19.100.44	graphite.codepot
-52.19.107.141	loggers.codepot
-52.19.16.87		apps.codepot 
-52.19.96.168	jenkins.codepot
+52.16.215.68    nexus.codepot
+52.19.100.152   rundeck.codepot
+52.19.100.44    graphite.codepot
+52.19.100.44    grafana.codepot
+52.19.100.44    seyren.codepot
+52.19.107.141   loggers.codepot
+52.19.107.141   kibana.codepot
+52.19.16.87     apps.codepot 
+52.19.96.168    jenkins.codepot
 ```
 # <a name="ports"/></a> Microservices addresses
 
