@@ -9,7 +9,9 @@ Here you find all information required for you to work during the Codepot 2015 W
 
 - [Documentation](#documentation)
 - [Ok what should I do now?](#ok-what-should-I-do-now)
+- [What is the feature that I'm supposed to do?](#what-feature)
 - [When is my feature done?](#when-is-my-feature-done)
+- [Where's the URL of my service that I should clone?](#ports)
 - [How to run my microservice locally](#how-to-run-my-microservice-locally)
 - [What's my service's port?](#ports)
 - [Where are all the tools?](#tools)
@@ -79,6 +81,19 @@ The ports are presented below in the table.
 ### Reminder!
 
 Try to be as reactive and non-blocking as possible!
+
+# <a name="what-feature"/></a> What is the feature that I'm supposed to do?
+
+## Main feature - Brewery
+
+- client clicks on prezentatr.io UI to order ingredients. Prezentatr.io calls aggregatr.io to start fetching ingredients
+- aggregatr.io calls external services to fetch ingredients and once a threshold has been met sends them to dojrzewatr.io
+- dojrzewatr.io waits for some time (matures the beer) and sends the WORT to butelkatr.io
+- butelkatr.io basing on the amount of wort produces bottles
+- each service has to report back to prezentatr.io about statuses
+
+All the implementation details are to be decided between you. Note that the Accurest contracts will already give you 
+hints on how the feature should be done.
 
 # <a name="when-is-my-feature-done"/></a> When is my feature done?
 
