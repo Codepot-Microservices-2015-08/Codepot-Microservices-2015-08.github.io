@@ -49,6 +49,12 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Micro-Infra spring fast introduction - online](https://docs.google.com/presentation/d/1xbdOWYvuGKnp-_1wGz-bZTobEbCePRr062YUnx4jTQg/edit?usp=sharing)
 - [Micro-Infra spring fast introduction - pdf](resources/Microservices_Codepot.pdf)
 
+## Additional links
+
+- [Ansible scripts used for provisioning of the Workshop setup](https://github.com/microservice-hackathon/infrastructure)
+- [Jenkins-DSL code to setup Jenkins jobs for the Workshop](https://github.com/microservice-hackathon/jenkins/tree/2015-08-codepot-offline)
+- [Micro-Infra-Spring codebase](https://github.com/4finance/micro-infra-spring)
+
 # <a name="ok-what-should-I-do-now"/></a> Ok what should I do now? 
 
 ## Set up /etc/hosts
