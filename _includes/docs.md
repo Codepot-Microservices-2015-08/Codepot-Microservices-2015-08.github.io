@@ -51,6 +51,10 @@ Here you find all information required for you to work during the Codepot 2015 W
 
 # <a name="ok-what-should-I-do-now"/></a> Ok what should I do now? 
 
+## Set up /etc/hosts
+
+Go to your `/etc/hosts` and append values like presented in the code snippet [here](#hosts)
+
 ## Clone the GIT properties repository to your computer
 
 Clone repositories from [https://github.com/Codepot-Microservices-2015-08](https://github.com/Codepot-Microservices-2015-08)
