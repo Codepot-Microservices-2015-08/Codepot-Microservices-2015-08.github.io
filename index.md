@@ -6,6 +6,8 @@ layout: default
 {% include docs.md %}
 
 
+---
+
 # <a name="tools"/></a> Tools
 
 <ul>
@@ -13,6 +15,8 @@ layout: default
   <li><a href="{{ tool.url }}">{{ tool.name }}</a></li>
 {% endfor %}
 </ul>
+
+---
 
 # <a name="hosts"/></a> /etc/hosts
 
@@ -27,6 +31,9 @@ layout: default
 52.19.16.87     apps.codepot 
 52.19.96.168    jenkins.codepot
 ```
+
+---
+
 # <a name="ports"/></a> Microservices addresses
 
 <table class='table'>

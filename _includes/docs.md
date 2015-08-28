@@ -22,6 +22,8 @@ Here you find all information required for you to work during the Codepot 2015 W
     - [Metrics setting example](#metrics)
     - [Seyren setup example](#seyren)
 
+---
+
 # <a name="documentation"/></a> Documentation
 
 ## Good to do before the workshop
@@ -54,6 +56,8 @@ Here you find all information required for you to work during the Codepot 2015 W
 - [Ansible scripts used for provisioning of the Workshop setup](https://github.com/microservice-hackathon/infrastructure)
 - [Jenkins-DSL code to setup Jenkins jobs for the Workshop](https://github.com/microservice-hackathon/jenkins/tree/2015-08-codepot-offline)
 - [Micro-Infra-Spring codebase](https://github.com/4finance/micro-infra-spring)
+
+---
 
 # <a name="ok-what-should-I-do-now"/></a> Ok what should I do now? 
 
@@ -92,6 +96,8 @@ The ports are presented below in the table.
 
 Try to be as reactive and non-blocking as possible!
 
+---
+
 # <a name="what-feature"/></a> What is the feature that I'm supposed to do?
 
 ## Main feature - Brewery
@@ -105,6 +111,8 @@ Try to be as reactive and non-blocking as possible!
 All the implementation details are to be decided between you. Note that the Accurest contracts will already give you 
 hints on how the feature should be done.
 
+---
+
 # <a name="when-is-my-feature-done"/></a> When is my feature done?
 
 The definition of done is as follows:
@@ -116,9 +124,13 @@ The definition of done is as follows:
 - each team has its own Slack room with alerts popping up
 - there are dashboards on [kibana](http://kibana.codepot/#/dashboard/file/default.json) (logs) and [grafana](http://grafana.codepot/#/dashboard/file/default.json) (metrics) set up
 
+---
+
 # <a name="how-to-run-my-microservice-locally"/></a> How to run my microservice locally
 
 It's all there in the readme - [boot-microservice-readme](https://github.com/4finance/boot-microservice)
+
+---
 
 # <a name="useful-snippets-info"/></a> Useful snippets / info
 
