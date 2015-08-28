@@ -285,3 +285,16 @@ Once you've added a metric most likely you want to get notified if some threshol
 Pick `Slack` as _Type_ and type in the _channel name with a hash at the beginning`. e.g. `#channel` 
 
 ![alt text](images/seyren/seyren_create_subscription.png "Fill out the subscription dialog")
+
+## How to run in debug mode with stubs from nexus
+
+application.yaml
+
+```yaml
+stubrunner:
+  #skip-local-repo: false
+  #work-offline: true
+  use-microservice-definitions: true
+  stubs:
+    repository.root: "http://52.16.215.68:8081/nexus/content/repositories/releases/"
+```
