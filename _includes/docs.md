@@ -307,6 +307,8 @@ stubrunner:
 
 ### How to start in dev mode
 
+To start it's enough to run the following Gradle Command
+
 ```
 ./gradlew bootRun -Dspring.profiles.active=DEV -DAPP_ENV=dev
 ```
