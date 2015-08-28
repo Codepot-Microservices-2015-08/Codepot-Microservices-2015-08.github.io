@@ -43,7 +43,7 @@ layout: default
       <td><a href="http://apps.{{ site.domain }}:{{ project.port }}">{{ project.name }} (port {{ project.port }})</a></td>
       <td><a href="https://github.com/Codepot-Microservices-2015-08/{{ project.name }}"> Github URL</a></td>
       <td><a href="http://apps.{{ site.domain }}:{{ project.port }}/swagger/index.html">Swagger</a></td>
-      <td><a href="http://jenkins.{{ site.domain }}:8080/view/{{ project.domain }}/{{ project.domain }}-pipelines/view/{{ project.name }}-delivery//">Jenkins</a></td>
+      <td><a href="http://jenkins.{{ site.domain }}:8080/view/{{ project.domain }}/view/{{ project.domain }}-pipelines/view/{{ project.name }}-delivery//">Jenkins</a></td>
     </tr>
   {% endfor %}
   </tbody>
