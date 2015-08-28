@@ -304,3 +304,9 @@ stubrunner:
   stubs:
     repository.root: "http://52.16.215.68:8081/nexus/content/repositories/releases/"
 ```
+
+### How to start in dev mode
+
+```
+./gradlew bootRun -Dspring.profiles.active=DEV -DAPP_ENV=dev
+```
