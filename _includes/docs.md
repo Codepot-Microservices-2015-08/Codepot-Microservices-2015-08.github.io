@@ -228,6 +228,18 @@ class IngredientsAggregator {
 
 ```
 
+## How to take current CorrelationID
+
+Use the following snippet
+
+```
+import com.ofg.infrastructure.correlationid.CorrelationIdHolder;
+
+
+CorrelationIdHolder.get();
+
+```
+
 ## <a name="seyren"/></a> How to configure alerting in Seyren
 
 In order to add alerting in Seyren you have to first:
