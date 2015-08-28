@@ -167,6 +167,7 @@ Example of a component registered via `@Component` (you should use `@Configurati
 import com.netflix.hystrix.HystrixCommand;
 import com.nurkiewicz.asyncretry.RetryExecutor;
 import com.ofg.infrastructure.web.resttemplate.fluent.ServiceRestClient;
+import com.netflix.hystrix.HystrixCommand;
 
 import static com.netflix.hystrix.HystrixCommandGroupKey.Factory.asKey;
 
@@ -186,7 +187,7 @@ public class VideoService {
         return serviceRestClient.forService("someAliasFromMicroserviceDescriptor")
                 .retryUsing(retryExecutor)
                 .post()
-                .withCircuitBreaker(withGroupKey(asKey("hystrix_group")))
+                .withCircuitBreaker(HystrixCommand.Setter.withGroupKey(asKey("hystrix_group")))
                 .onUrl("/someUrlToWhichYouWantToSendARequest")
                 .body(ingredients)
                 .withHeaders().contentType("application/vnd.some.other.service.v1+json")
