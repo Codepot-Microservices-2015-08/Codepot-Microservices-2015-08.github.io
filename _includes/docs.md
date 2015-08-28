@@ -21,6 +21,7 @@ Here you find all information required for you to work during the Codepot 2015 W
     - [Service Rest Client example](#service-rest-client)
     - [Metrics setting example](#metrics)
     - [Seyren setup example](#seyren)
+- [Working example of the whole setup](#working)
 
 ---
 
@@ -325,3 +326,8 @@ To start it's enough to run the following Gradle Command
 ```
 ./gradlew bootRun -Dspring.profiles.active=DEV -DAPP_ENV=dev
 ```
+
+#  <a name="working"/></a> Working example of the whole setup
+
+[Link to the Github organization with proper setup](https://github.com/2015-06-devoxx-microservices)
+
