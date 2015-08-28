@@ -48,5 +48,3 @@ layout: default
   {% endfor %}
   </tbody>
 </table>
-
-blue/view/blue-pipelines/view/aggregatr-blue-delivery/

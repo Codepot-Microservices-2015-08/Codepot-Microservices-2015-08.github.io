@@ -164,6 +164,12 @@ Example of a component registered via `@Component` (you should use `@Configurati
  `ServiceRestClient` to call other components.
 
 ```java
+import com.netflix.hystrix.HystrixCommand;
+import com.nurkiewicz.asyncretry.RetryExecutor;
+import com.ofg.infrastructure.web.resttemplate.fluent.ServiceRestClient;
+
+import static com.netflix.hystrix.HystrixCommandGroupKey.Factory.asKey;
+
 @Component
 public class VideoService {
 
